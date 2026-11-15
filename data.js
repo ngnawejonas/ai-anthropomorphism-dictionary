@@ -130,7 +130,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Some systems can carry out valid inferential steps and solve problems that require structured relationships.",
     limit: "A fluent rationale need not faithfully expose the causal computations behind an answer; equally, absence of humanlike reasoning does not imply an inability to solve problems.",
     stakes: "The distinction matters for evaluating reliability, faithfulness, and generalization rather than just the plausibility of explanations.",
-    question: "Are we testing answer quality, procedural validity, or faithfulness of the reported process?"
+    question: "Are we testing answer quality, procedural validity, or faithfulness of the reported process?",
+    refs: ["wei2022", "turpin2023", "inie2026"]
   },
   {
     word: "Understanding", category: "behavior", kind: "Contested attribution",
@@ -140,7 +141,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Flexible, context-sensitive behavior may resemble what we call understanding in people.",
     limit: "A successful response alone cannot establish the nature or depth of underlying understanding; researchers disagree over suitable criteria.",
     stakes: "The word can quietly shift an empirical claim about performance into a much stronger claim about mental competence.",
-    question: "What observable test would justify the term in this particular case?"
+    question: "What observable test would justify the term in this particular case?",
+    refs: ["wang2019", "bender2020", "devrio2025"]
   },
   {
     word: "Thinking", category: "behavior", kind: "Mind attribution",
@@ -150,7 +152,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Some computations yield solutions after intermediate processing rather than one immediate response.",
     limit: "More computation or a displayed reasoning trace does not, by itself, demonstrate conscious thought or humanlike introspection.",
     stakes: "A marketing label can blur important distinctions between architecture, compute budget, problem-solving ability, and subjective experience.",
-    question: "What observable behavior or mechanism does 'thinking' denote here?"
+    question: "What observable behavior or mechanism does 'thinking' denote here?",
+    refs: ["turing1950", "yao2023", "inie2026", "devrio2025"]
   },
   {
     word: "Knowledge", category: "behavior", kind: "Epistemic analogy",
@@ -160,7 +163,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A system can reliably provide information without being shown the source anew.",
     limit: "A recoverable claim is not necessarily verified, current, justified, or available for all phrasings of a question.",
     stakes: "Calling model outputs 'knowledge' may encourage uncritical reliance where provenance and verification are required.",
-    question: "Does the system retrieve evidence, reproduce a pattern, or establish a justified claim?"
+    question: "Does the system retrieve evidence, reproduce a pattern, or establish a justified claim?",
+    refs: ["petroni2019", "elazar2021"]
   },
   {
     word: "Belief", category: "behavior", kind: "Mental-state attribution",
@@ -170,7 +174,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Internal states can influence predictions and actions in ways that resemble belief-guided behavior.",
     limit: "A probability or elicited statement is not automatically a stable, unified, or consciously held belief.",
     stakes: "Overstating what a model 'believes' can mischaracterize inconsistent answers and obscure sensitivity to prompts.",
-    question: "What would show that a purported belief is stable across contexts?"
+    question: "What would show that a purported belief is stable across contexts?",
+    refs: ["kassner2021", "inie2026"]
   },
   {
     word: "Hallucination", category: "behavior", kind: "Clinical metaphor",
@@ -180,7 +185,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Both usages point to a divergence between a reported representation and external reality, but in different ways.",
     limit: "An incorrect generated statement is not evidence of a perceptual experience; 'hallucination' also conflates distinct error types such as factual mistakes and source-grounding failures.",
     stakes: "The term can soften responsibility for design and verification by making failures sound like mysterious episodes.",
-    question: "Is the failure factual inaccuracy, unsupported generation, or contradiction of the source?"
+    question: "Is the failure factual inaccuracy, unsupported generation, or contradiction of the source?",
+    refs: ["maynez2020", "hicks2024"]
   },
   {
     word: "Confidence", category: "behavior", kind: "Psychological analogy",
@@ -190,7 +196,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Both aim to signal how strongly a claim or prediction should be held.",
     limit: "High model scores or assertive language need not track correctness; calibration, distribution shift, and task definition matter.",
     stakes: "Users need calibrated uncertainty, not merely a system that sounds sure of itself.",
-    question: "Does this confidence measure predict error under the conditions where it will be used?"
+    question: "Does this confidence measure predict error under the conditions where it will be used?",
+    refs: ["guo2017", "nguyen2015"]
   },
   {
     word: "Lying", category: "behavior", kind: "Intent attribution",
@@ -200,7 +207,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A system may produce information that systematically misleads a user or evaluator.",
     limit: "A false statement alone cannot establish deceptive intent. Stronger claims require an explicit operational definition and evidence of strategic behavior.",
     stakes: "The label affects how people assign responsibility, diagnose failures, and design safeguards.",
-    question: "What evidence separates strategic deception from an ordinary model error?"
+    question: "What evidence separates strategic deception from an ordinary model error?",
+    refs: ["park2024", "hicks2024"]
   },
   {
     word: "Creativity", category: "behavior", kind: "Contested attribution",
@@ -210,7 +218,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Models can combine learned patterns into outputs that observers judge original or useful.",
     limit: "Novelty of output does not prove humanlike imagination, authorship, intention, or lived experience.",
     stakes: "How we frame machine creativity shapes judgments about labor, originality, authorship, and credit.",
-    question: "Are we evaluating the product, the process, or the producer?"
+    question: "Are we evaluating the product, the process, or the producer?",
+    refs: ["boden1998", "epstein2020"]
   },
   {
     word: "Emotion", category: "behavior", kind: "Experience attribution",
@@ -220,7 +229,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Systems can classify and generate language or behavior associated with emotional expression.",
     limit: "Recognizing a sentiment label or sounding distressed is not evidence of experiencing distress.",
     stakes: "Conflation can distort expectations in mental-health, companionship, and other sensitive settings.",
-    question: "Is the system detecting, expressing, modeling, or actually claimed to be experiencing emotion?"
+    question: "Is the system detecting, expressing, modeling, or actually claimed to be experiencing emotion?",
+    refs: ["picard2003", "inie2026", "devrio2025"]
   },
   {
     word: "Wanting", category: "behavior", kind: "Desire attribution",
@@ -230,7 +240,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Some systems reliably select actions that move toward specified outcomes.",
     limit: "A functional objective is not automatically a consciously felt desire, and the effective objective may differ from the one described by its designers.",
     stakes: "Attributing wants may exaggerate autonomy or conceal the human choices that established incentives.",
-    question: "Is 'wants' describing an explicit objective, an inferred policy, or a psychological claim?"
+    question: "Is 'wants' describing an explicit objective, an inferred policy, or a psychological claim?",
+    refs: ["langosco2022", "shanahan2023"]
   },
   {
     word: "Self-awareness", category: "behavior", kind: "Strong mental-state claim",
@@ -240,7 +251,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A system may model properties of its own operation and use them to guide decisions.",
     limit: "A fluent self-report is not independent evidence of subjective experience or accurate introspection.",
     stakes: "Claims of self-awareness can alter moral intuitions and people's trust before the scientific questions are settled.",
-    question: "What reliable self-monitoring behavior can we demonstrate without assuming consciousness?"
+    question: "What reliable self-monitoring behavior can we demonstrate without assuming consciousness?",
+    refs: ["devrio2025", "shanahan2023", "colombatto2024"]
   },
   {
     word: "Intention", category: "behavior", kind: "Goal attribution",
@@ -250,7 +262,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Some systems act in ways that are coherently directed toward an outcome.",
     limit: "Goal-directed behavior does not alone settle whether a system has intentions in the human philosophical or psychological sense.",
     stakes: "Precision helps separate predictable behavior from unsupported claims about motives.",
-    question: "Do we mean an explicit target, an inferred plan, or a mental state?"
+    question: "Do we mean an explicit target, an inferred plan, or a mental state?",
+    refs: ["cohen1990", "bender2021", "devrio2025"]
   },
   {
     word: "Agent", category: "relationship", kind: "Role and agency framing",
@@ -260,7 +273,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A system can take multiple actions and adapt its choices based on feedback.",
     limit: "An autonomous execution loop does not make the system a responsible moral agent; its authority, objectives, and permissions remain designed and delegated.",
     stakes: "The term influences how organizations assign oversight, accountability, and access to external tools.",
-    question: "Which decisions can the system make independently, and who remains accountable?"
+    question: "Which decisions can the system make independently, and who remains accountable?",
+    refs: ["wooldridge1995", "wang2024", "inie2026"]
   },
   {
     word: "Assistant", category: "relationship", kind: "Human-role framing",
@@ -270,7 +284,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "The system can reduce effort and supply useful assistance.",
     limit: "It does not automatically exercise professional duty, independent judgment, or the social understanding expected of a human assistant.",
     stakes: "The friendly role can increase reliance even when performance is unverified.",
-    question: "What responsibilities does an 'assistant' actually fulfill—and which remain with the user?"
+    question: "What responsibilities does an 'assistant' actually fulfill—and which remain with the user?",
+    refs: ["luger2016", "dautenhahn2005", "inie2026"]
   },
   {
     word: "Companion", category: "relationship", kind: "Social relationship framing",
@@ -280,7 +295,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "The system can sustain dialogue and produce responses that feel attentive or familiar.",
     limit: "Simulated reciprocity does not establish shared feelings, mutual obligation, or an independently lived relationship.",
     stakes: "The framing raises questions about dependency, vulnerable users, disclosure, and product incentives.",
-    question: "How clearly does the interface communicate the difference between interaction and reciprocity?"
+    question: "How clearly does the interface communicate the difference between interaction and reciprocity?",
+    refs: ["skjuve2021", "turkle2007", "inie2026"]
   },
   {
     word: "Personality", category: "relationship", kind: "Personhood metaphor",
@@ -290,7 +306,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A model can display recognizable and consistent patterns of expression.",
     limit: "A persistent voice in outputs is not proof of an enduring personal identity or personal history.",
     stakes: "Design choices about persona shape social expectations and perceived credibility.",
-    question: "Are we describing a style, a behavioral policy, or claiming a self?"
+    question: "Are we describing a style, a behavioral policy, or claiming a self?",
+    refs: ["nass1995", "devrio2025"]
   },
   {
     word: "Trust", category: "relationship", kind: "Relational metaphor",
@@ -300,7 +317,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "People must decide whether to rely on systems under uncertainty.",
     limit: "A model has no automatically established duty of care; trustworthiness should be grounded in evidence about performance and governance.",
     stakes: "The vocabulary of trust can either encourage sensible verification or invite overreliance without adequate guarantees.",
-    question: "What measurable reliability claim supports the trust being requested?"
+    question: "What measurable reliability claim supports the trust being requested?",
+    refs: ["lee2004", "jacovi2021"]
   },
   {
     word: "Alignment", category: "relationship", kind: "Normative and relational analogy",
@@ -310,7 +328,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Behavior can be shaped to fit the purposes of its users or designers.",
     limit: "Human values are plural and context-dependent; a training objective, preference dataset, or policy test cannot exhaustively stand in for them.",
     stakes: "The term may suggest a settled target despite contested choices about whose interests are represented.",
-    question: "Aligned with whom, according to what criteria, and under which conditions?"
+    question: "Aligned with whom, according to what criteria, and under which conditions?",
+    refs: ["gabriel2020", "ouyang2022"]
   },
   {
     word: "Autonomy", category: "relationship", kind: "Agency analogy",
@@ -320,7 +339,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Both can describe independence from continuous instruction.",
     limit: "Operational autonomy is constrained by human-designed objectives, permissions, infrastructure, and governance; it need not imply moral self-determination.",
     stakes: "Organizations need to specify scope and control rather than relying on the word 'autonomous'.",
-    question: "Autonomous over which decisions, with which constraints and override mechanisms?"
+    question: "Autonomous over which decisions, with which constraints and override mechanisms?",
+    refs: ["wang2024", "beer2014", "sparrow2007"]
   },
   {
     word: "Empathy", category: "relationship", kind: "Social-emotional framing",
@@ -330,7 +350,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A system can respond sensitively to the content and emotional tone of a message.",
     limit: "Emotionally appropriate language does not establish that the system shares feelings or understands a person's situation as a person would.",
     stakes: "The distinction is especially important in therapy-adjacent and other high-stakes interactions.",
-    question: "How can supportive behavior be evaluated without implying emotional experience?"
+    question: "How can supportive behavior be evaluated without implying emotional experience?",
+    refs: ["rashkin2019", "montemayor2022", "devrio2025"]
   },
   {
     word: "Cooperation", category: "relationship", kind: "Social behavior analogy",
@@ -340,7 +361,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Multiple systems can achieve outcomes that require coordinated behavior.",
     limit: "Joint optimization does not imply social understanding, solidarity, or shared intentions.",
     stakes: "The term should not conceal conflicts of objective, communication failure, or emergent coordination that is undesirable.",
-    question: "What mechanism produces coordination, and for whose benefit?"
+    question: "What mechanism produces coordination, and for whose benefit?",
+    refs: ["panait2005", "calvano2020"]
   },
   {
     word: "Obedience", category: "relationship", kind: "Social hierarchy metaphor",
@@ -350,7 +372,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A system may reliably follow commands and constraints.",
     limit: "The metaphor imports social power relations; good systems sometimes must refuse unsafe or unauthorized requests.",
     stakes: "Reliability should include correct boundaries, not merely unqualified compliance.",
-    question: "When should an assistant follow, clarify, or refuse an instruction?"
+    question: "When should an assistant follow, clarify, or refuse an instruction?",
+    refs: ["milli2017"]
   },
   {
     word: "Friend", category: "relationship", kind: "Relationship attribution",
@@ -360,7 +383,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Interaction can feel familiar, responsive, and socially rewarding.",
     limit: "A friendly interface is not evidence of mutual affection or reciprocal responsibility.",
     stakes: "The term is consequential when users—especially vulnerable users—form expectations of loyalty or care.",
-    question: "What obligations would a friendship imply that this product cannot meet?"
+    question: "What obligations would a friendship imply that this product cannot meet?",
+    refs: ["brandtzaeg2022", "dautenhahn2005", "devrio2025"]
   }
 ];
 
@@ -369,5 +393,46 @@ window.DICTIONARY_REFERENCES = {
   "devrio2025": { authors: "A. DeVrio et al.", year: "2025", title: "A Taxonomy of Linguistic Expressions That Contribute to Anthropomorphism of Language Technologies", venue: "CHI", url: "https://doi.org/10.1145/3706598.3714038", peerReviewed: true },
   "ouraiwords2026": { authors: "The Open University", year: "2026", title: "OurAIwords: Better Words for AI", venue: "OpenLearn Create", url: "https://www.open.edu/openlearncreate/course/view.php?id=20609", peerReviewed: false },
   "jain2019": { authors: "S. Jain & B. C. Wallace", year: "2019", title: "Attention is not Explanation", venue: "NAACL", url: "https://aclanthology.org/N19-1357/", peerReviewed: true },
-  "wiegreffe2019": { authors: "S. Wiegreffe & Y. Pinter", year: "2019", title: "Attention is not not Explanation", venue: "EMNLP", url: "https://aclanthology.org/D19-1002/", peerReviewed: true }
+  "wiegreffe2019": { authors: "S. Wiegreffe & Y. Pinter", year: "2019", title: "Attention is not not Explanation", venue: "EMNLP", url: "https://aclanthology.org/D19-1002/", peerReviewed: true },
+  "beer2014": { authors: "J. M. Beer, A. D. Fisk & W. A. Rogers", year: "2014", title: "Toward a Framework for Levels of Robot Autonomy in Human-Robot Interaction", venue: "Journal of Human-Robot Interaction", url: "https://doi.org/10.5898/JHRI.3.2.Beer", peerReviewed: true },
+  "bender2020": { authors: "E. M. Bender & A. Koller", year: "2020", title: "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data", venue: "ACL", url: "https://doi.org/10.18653/v1/2020.acl-main.463", peerReviewed: true },
+  "bender2021": { authors: "E. M. Bender et al.", year: "2021", title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜", venue: "FAccT", url: "https://doi.org/10.1145/3442188.3445922", peerReviewed: true },
+  "boden1998": { authors: "M. A. Boden", year: "1998", title: "Creativity and artificial intelligence", venue: "Artificial Intelligence", url: "https://doi.org/10.1016/S0004-3702(98)00055-1", peerReviewed: true },
+  "brandtzaeg2022": { authors: "P. B. Brandtzaeg, M. Skjuve & A. Følstad", year: "2022", title: "My AI Friend: How Users of a Social Chatbot Understand Their Human–AI Friendship", venue: "Human Communication Research", url: "https://doi.org/10.1093/hcr/hqac008", peerReviewed: true },
+  "calvano2020": { authors: "E. Calvano et al.", year: "2020", title: "Artificial Intelligence, Algorithmic Pricing, and Collusion", venue: "American Economic Review", url: "https://doi.org/10.1257/aer.20190623", peerReviewed: true },
+  "cohen1990": { authors: "P. R. Cohen & H. J. Levesque", year: "1990", title: "Intention is choice with commitment", venue: "Artificial Intelligence", url: "https://doi.org/10.1016/0004-3702(90)90055-5", peerReviewed: true },
+  "colombatto2024": { authors: "C. Colombatto & S. M. Fleming", year: "2024", title: "Folk psychological attributions of consciousness to large language models", venue: "Neuroscience of Consciousness", url: "https://doi.org/10.1093/nc/niae013", peerReviewed: true },
+  "dautenhahn2005": { authors: "K. Dautenhahn et al.", year: "2005", title: "What is a robot companion - friend, assistant or butler?", venue: "IROS", url: "https://doi.org/10.1109/IROS.2005.1545189", peerReviewed: true },
+  "elazar2021": { authors: "Y. Elazar et al.", year: "2021", title: "Measuring and Improving Consistency in Pretrained Language Models", venue: "TACL", url: "https://doi.org/10.1162/tacl_a_00410", peerReviewed: true },
+  "epstein2020": { authors: "Z. Epstein et al.", year: "2020", title: "Who Gets Credit for AI-Generated Art?", venue: "iScience", url: "https://doi.org/10.1016/j.isci.2020.101515", peerReviewed: true },
+  "gabriel2020": { authors: "I. Gabriel", year: "2020", title: "Artificial Intelligence, Values, and Alignment", venue: "Minds and Machines", url: "https://doi.org/10.1007/s11023-020-09539-2", peerReviewed: true },
+  "guo2017": { authors: "C. Guo et al.", year: "2017", title: "On Calibration of Modern Neural Networks", venue: "ICML", url: "https://proceedings.mlr.press/v70/guo17a.html", peerReviewed: true },
+  "hicks2024": { authors: "M. T. Hicks, J. Humphries & J. Slater", year: "2024", title: "ChatGPT is bullshit", venue: "Ethics and Information Technology", url: "https://doi.org/10.1007/s10676-024-09775-5", peerReviewed: true },
+  "jacovi2021": { authors: "A. Jacovi et al.", year: "2021", title: "Formalizing Trust in Artificial Intelligence: Prerequisites, Causes and Goals of Human Trust in AI", venue: "FAccT", url: "https://doi.org/10.1145/3442188.3445923", peerReviewed: true },
+  "kassner2021": { authors: "N. Kassner et al.", year: "2021", title: "BeliefBank: Adding Memory to a Pre-Trained Language Model for a Systematic Notion of Belief", venue: "EMNLP", url: "https://doi.org/10.18653/v1/2021.emnlp-main.697", peerReviewed: true },
+  "langosco2022": { authors: "L. Langosco Di Langosco et al.", year: "2022", title: "Goal Misgeneralization in Deep Reinforcement Learning", venue: "ICML", url: "https://proceedings.mlr.press/v162/langosco22a.html", peerReviewed: true },
+  "lee2004": { authors: "J. D. Lee & K. A. See", year: "2004", title: "Trust in Automation: Designing for Appropriate Reliance", venue: "Human Factors", url: "https://doi.org/10.1518/hfes.46.1.50_30392", peerReviewed: true },
+  "luger2016": { authors: "E. Luger & A. Sellen", year: "2016", title: "\"Like Having a Really Bad PA\": The Gulf between User Expectation and Experience of Conversational Agents", venue: "CHI", url: "https://doi.org/10.1145/2858036.2858288", peerReviewed: true },
+  "maynez2020": { authors: "J. Maynez et al.", year: "2020", title: "On Faithfulness and Factuality in Abstractive Summarization", venue: "ACL", url: "https://doi.org/10.18653/v1/2020.acl-main.173", peerReviewed: true },
+  "milli2017": { authors: "S. Milli et al.", year: "2017", title: "Should Robots be Obedient?", venue: "IJCAI", url: "https://doi.org/10.24963/ijcai.2017/662", peerReviewed: true },
+  "montemayor2022": { authors: "C. Montemayor, J. Halpern & A. Fairweather", year: "2022", title: "In principle obstacles for empathic AI: why we can't replace human empathy in healthcare", venue: "AI & Society", url: "https://doi.org/10.1007/s00146-021-01230-z", peerReviewed: true },
+  "nass1995": { authors: "C. Nass et al.", year: "1995", title: "Can computer personalities be human personalities?", venue: "International Journal of Human-Computer Studies", url: "https://doi.org/10.1006/ijhc.1995.1042", peerReviewed: true },
+  "nguyen2015": { authors: "A. Nguyen, J. Yosinski & J. Clune", year: "2015", title: "Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images", venue: "CVPR", url: "https://doi.org/10.1109/CVPR.2015.7298640", peerReviewed: true },
+  "ouyang2022": { authors: "L. Ouyang et al.", year: "2022", title: "Training language models to follow instructions with human feedback", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract-Conference.html", peerReviewed: true },
+  "panait2005": { authors: "L. Panait & S. Luke", year: "2005", title: "Cooperative Multi-Agent Learning: The State of the Art", venue: "Autonomous Agents and Multi-Agent Systems", url: "https://doi.org/10.1007/s10458-005-2631-2", peerReviewed: true },
+  "park2024": { authors: "P. S. Park et al.", year: "2024", title: "AI deception: A survey of examples, risks, and potential solutions", venue: "Patterns", url: "https://doi.org/10.1016/j.patter.2024.100988", peerReviewed: true },
+  "petroni2019": { authors: "F. Petroni et al.", year: "2019", title: "Language Models as Knowledge Bases?", venue: "EMNLP-IJCNLP", url: "https://doi.org/10.18653/v1/D19-1250", peerReviewed: true },
+  "picard2003": { authors: "R. W. Picard", year: "2003", title: "Affective computing: challenges", venue: "International Journal of Human-Computer Studies", url: "https://doi.org/10.1016/S1071-5819(03)00052-1", peerReviewed: true },
+  "rashkin2019": { authors: "H. Rashkin et al.", year: "2019", title: "Towards Empathetic Open-domain Conversation Models: A New Benchmark and Dataset", venue: "ACL", url: "https://doi.org/10.18653/v1/P19-1534", peerReviewed: true },
+  "shanahan2023": { authors: "M. Shanahan, K. McDonell & L. Reynolds", year: "2023", title: "Role play with large language models", venue: "Nature", url: "https://doi.org/10.1038/s41586-023-06647-8", peerReviewed: true },
+  "skjuve2021": { authors: "M. Skjuve et al.", year: "2021", title: "My Chatbot Companion - a Study of Human-Chatbot Relationships", venue: "International Journal of Human-Computer Studies", url: "https://doi.org/10.1016/j.ijhcs.2021.102601", peerReviewed: true },
+  "sparrow2007": { authors: "R. Sparrow", year: "2007", title: "Killer Robots", venue: "Journal of Applied Philosophy", url: "https://doi.org/10.1111/j.1468-5930.2007.00346.x", peerReviewed: true },
+  "turing1950": { authors: "A. M. Turing", year: "1950", title: "Computing Machinery and Intelligence", venue: "Mind", url: "https://doi.org/10.1093/mind/LIX.236.433", peerReviewed: true },
+  "turkle2007": { authors: "S. Turkle", year: "2007", title: "Authenticity in the age of digital companions", venue: "Interaction Studies", url: "https://doi.org/10.1075/is.8.3.11tur", peerReviewed: true },
+  "turpin2023": { authors: "M. Turpin et al.", year: "2023", title: "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/ed3fea9033a80fea1376299fa7863f4a-Abstract-Conference.html", peerReviewed: true },
+  "wang2019": { authors: "A. Wang et al.", year: "2019", title: "GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding", venue: "ICLR", url: "https://openreview.net/forum?id=rJ4km2R5t7", peerReviewed: true },
+  "wang2024": { authors: "L. Wang et al.", year: "2024", title: "A survey on large language model based autonomous agents", venue: "Frontiers of Computer Science", url: "https://doi.org/10.1007/s11704-024-40231-1", peerReviewed: true },
+  "wei2022": { authors: "J. Wei et al.", year: "2022", title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html", peerReviewed: true },
+  "wooldridge1995": { authors: "M. Wooldridge & N. R. Jennings", year: "1995", title: "Intelligent agents: theory and practice", venue: "Knowledge Engineering Review", url: "https://doi.org/10.1017/S0269888900008122", peerReviewed: true },
+  "yao2023": { authors: "S. Yao et al.", year: "2023", title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract-Conference.html", peerReviewed: true }
 };

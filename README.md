@@ -40,7 +40,7 @@ Entries are sorted alphabetically automatically. The entry count is calculated d
 
 Each reference has `authors`, `year`, `title`, `venue`, `url` (https) and `peerReviewed`. Entries may only cite references marked `peerReviewed: true`; the flag isn't shown on the site.
 
-Run `node scripts/validate-data.mjs` to check `data.js`. The same check runs on every pull request and every push to `main`.
+Run `node scripts/validate-data.mjs` to check `data.js` for typos and missing fields.
 
 `styles.css` controls design and responsiveness. `app.js` implements search, category filters, deep links (`#entry/attention`), an accessible entry panel, keyboard shortcuts (`/` or Cmd/Ctrl+K), and reference links.
 

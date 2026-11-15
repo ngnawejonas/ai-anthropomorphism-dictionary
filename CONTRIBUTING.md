@@ -19,15 +19,13 @@ You can [add a word](#add-a-word) or [add a paper to a word](#add-a-paper-to-a-w
 3. Add your papers to `window.DICTIONARY_REFERENCES` at the bottom of the file, unless they're already there (see [Papers](#papers)).
 4. Click **Commit changes…**, then **Propose changes**, then **Create pull request**, and complete the checklist in the description.
 
-An automated check validates `data.js` on every pull request. If it fails, click **Details** next to the check to see what to fix, then edit `data.js` again in your fork; the pull request updates itself.
-
 ### With git
 
 ```sh
 git clone https://github.com/<your-username>/ai-anthropomorphism-dictionary.git
 cd ai-anthropomorphism-dictionary
 # edit data.js, then:
-node scripts/validate-data.mjs   # the same check the pull request runs
+node scripts/validate-data.mjs   # optional: catches typos and missing fields
 python3 -m http.server 8000      # preview at http://localhost:8000
 ```
 
@@ -80,7 +78,7 @@ Each paper is one line in `window.DICTIONARY_REFERENCES`:
 - **authors:** initials and surname. List up to three authors; write "A. Surname et al." for four or more.
 - **venue:** the journal's or conference's short name: "NeurIPS", "CHI", "Nature".
 - **url:** `https://doi.org/…` when the paper has a DOI, otherwise its official proceedings page. It must start with `https://`.
-- **peerReviewed:** `true` confirms the paper is peer-reviewed. It isn't shown on the site, but the automated check only accepts papers marked this way.
+- **peerReviewed:** `true` confirms the paper is peer-reviewed. It isn't shown on the site.
 
 ## Add a paper to a word
 
