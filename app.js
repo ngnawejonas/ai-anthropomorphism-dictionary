@@ -3,6 +3,7 @@
   const entries = [...window.DICTIONARY_ENTRIES].sort((a,b) => a.word.localeCompare(b.word));
   const references = window.DICTIONARY_REFERENCES;
   const categoryNames = {technical:'Technical language',behavior:'Attributed behavior',relationship:'Relationships'};
+  const contributeUrl = 'https://github.com/ngnawejonas/ai-anthropomorphism-dictionary/blob/main/CONTRIBUTING.md';
   const $ = selector => document.querySelector(selector);
   const grid = $('#word-grid');
   const search = $('#word-search');
@@ -28,7 +29,7 @@
     grid.innerHTML = filtered.map(entry => {
       const index = entries.indexOf(entry)+1;
       return `<button class="word-card" type="button" data-open="${slug(entry.word)}" aria-label="Read ${escapeHtml(entry.word)} entry">
-        <span class="word-card-top"><span class="word-number">${pad(index)} <span style="color:#b1b9b0">/ 036</span></span><span class="word-card-icon" aria-hidden="true">↗</span></span>
+        <span class="word-card-top"><span class="word-number">${pad(index)} <span style="color:#b1b9b0">/ ${pad(entries.length)}</span></span><span class="word-card-icon" aria-hidden="true">↗</span></span>
         <span><span class="word-card-word">${escapeHtml(entry.word)}</span><span class="word-card-teaser">${escapeHtml(entry.teaser)}</span></span>
         <span class="word-footer">${escapeHtml(categoryNames[entry.category])}</span>
       </button>`;
@@ -54,9 +55,8 @@
       ['Where it breaks down',entry.limit],
       ['Why the distinction matters',entry.stakes]
     ];
-    const refBlock = entry.refs?.length
-      ? `<div class="entry-sources"><h4>Selected reading for this word</h4>${entry.refs.map(id => {const ref=references[id];return ref?`<a href="${escapeHtml(ref.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(ref.authors)} (${escapeHtml(ref.year)}): ${escapeHtml(ref.title)} <span aria-hidden="true">↗</span></a>`:'';}).join('')}</div>`
-      : '<div class="entry-sources"><h4>Editorial status</h4><p style="font-size:12px;color:#829087;line-height:1.7">Starter entry · Individual source annotations to be added in a later edition.</p></div>';
+    const papers = (entry.refs||[]).map(id => references[id]).filter(Boolean);
+    const refBlock = `<div class="entry-sources"><h4>In the literature</h4>${papers.map(ref => `<a href="${escapeHtml(ref.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(ref.authors)} (${escapeHtml(ref.year)}): ${escapeHtml(ref.title)} <span class="source-venue">${escapeHtml(ref.venue)}</span> <span aria-hidden="true">↗</span></a>`).join('')}<a class="source-suggest" href="${contributeUrl}#add-a-paper-to-a-word" target="_blank" rel="noopener noreferrer">${papers.length?'Suggest another paper':'No papers listed yet. Suggest one'} <span aria-hidden="true">↗</span></a></div>`;
     panelContent.innerHTML = `
       <div class="entry-meta"><span>WORD ${pad(i+1)} / ${pad(entries.length)}</span><span>EDITORIAL DRAFT · 2026</span></div>
       <h2 class="entry-title" id="entry-heading">${escapeHtml(entry.word)}</h2>

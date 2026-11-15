@@ -365,9 +365,9 @@ window.DICTIONARY_ENTRIES = [
 ];
 
 window.DICTIONARY_REFERENCES = {
-  "inie2026": { authors: "N. Inie, P. Zukerman & E. M. Bender", year: "2026", title: "De-anthropomorphizing ‘AI’: From wishful mnemonics to accurate nomenclature", venue: "First Monday", url: "https://firstmonday.org/ojs/index.php/fm/article/view/14366" },
-  "devrio2025": { authors: "A. DeVrio et al.", year: "2025", title: "A Taxonomy of Linguistic Expressions That Contribute to Anthropomorphism of Language Technologies", venue: "CHI", url: "https://www.microsoft.com/en-us/research/publication/a-taxonomy-of-linguistic-expressions-that-contribute-to-anthropomorphism-of-language-technologies/" },
-  "ouraiwords2026": { authors: "The Open University", year: "2026", title: "OurAIwords: Better Words for AI", venue: "OpenLearn Create", url: "https://www.open.edu/openlearncreate/course/view.php?id=20609" },
-  "jain2019": { authors: "S. Jain & B. C. Wallace", year: "2019", title: "Attention is not Explanation", venue: "NAACL", url: "https://aclanthology.org/N19-1357/" },
-  "wiegreffe2019": { authors: "S. Wiegreffe & Y. Pinter", year: "2019", title: "Attention is not not Explanation", venue: "EMNLP", url: "https://aclanthology.org/D19-1002/" }
+  "inie2026": { authors: "N. Inie, P. Zukerman & E. M. Bender", year: "2026", title: "De-anthropomorphizing “AI”: From wishful mnemonics to accurate nomenclature", venue: "First Monday", url: "https://doi.org/10.5210/fm.v31i2.14366", peerReviewed: true },
+  "devrio2025": { authors: "A. DeVrio et al.", year: "2025", title: "A Taxonomy of Linguistic Expressions That Contribute to Anthropomorphism of Language Technologies", venue: "CHI", url: "https://doi.org/10.1145/3706598.3714038", peerReviewed: true },
+  "ouraiwords2026": { authors: "The Open University", year: "2026", title: "OurAIwords: Better Words for AI", venue: "OpenLearn Create", url: "https://www.open.edu/openlearncreate/course/view.php?id=20609", peerReviewed: false },
+  "jain2019": { authors: "S. Jain & B. C. Wallace", year: "2019", title: "Attention is not Explanation", venue: "NAACL", url: "https://aclanthology.org/N19-1357/", peerReviewed: true },
+  "wiegreffe2019": { authors: "S. Wiegreffe & Y. Pinter", year: "2019", title: "Attention is not not Explanation", venue: "EMNLP", url: "https://aclanthology.org/D19-1002/", peerReviewed: true }
 };
