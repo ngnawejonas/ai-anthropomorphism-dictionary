@@ -58,7 +58,7 @@
     const papers = (entry.refs||[]).map(id => references[id]).filter(Boolean);
     const refBlock = `<div class="entry-sources"><h4>In the literature</h4>${papers.map(ref => `<a href="${escapeHtml(ref.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(ref.authors)} (${escapeHtml(ref.year)}): ${escapeHtml(ref.title)} <span class="source-venue">${escapeHtml(ref.venue)}</span> <span aria-hidden="true">↗</span></a>`).join('')}<a class="source-suggest" href="${contributeUrl}#add-a-paper-to-a-word" target="_blank" rel="noopener noreferrer">${papers.length?'Suggest another paper':'No papers listed yet. Suggest one'} <span aria-hidden="true">↗</span></a></div>`;
     panelContent.innerHTML = `
-      <div class="entry-meta"><span>WORD ${pad(i+1)} / ${pad(entries.length)}</span><span>EDITORIAL DRAFT · 2026</span></div>
+      <div class="entry-meta"><span>WORD ${pad(i+1)} / ${pad(entries.length)}</span></div>
       <h2 class="entry-title" id="entry-heading">${escapeHtml(entry.word)}</h2>
       <div class="entry-kind">${escapeHtml(entry.kind)} <span style="color:#b0b9ae">·</span> ${escapeHtml(categoryNames[entry.category])}</div>
       <p class="entry-lede">${escapeHtml(entry.teaser)}</p>
