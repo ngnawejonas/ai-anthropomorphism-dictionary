@@ -10,7 +10,7 @@ window.DICTIONARY_ENTRIES = [
     limit: "An attention weight is not evidence of conscious focus. Nor does a high weight automatically mean a feature caused the model's answer; the relationship between attention and explanation is method-dependent and debated.",
     stakes: "Treating attention maps as explanations can give users and researchers more confidence in an interpretation than the evidence warrants.",
     question: "When does a model's attention distribution genuinely help explain a prediction?",
-    refs: ["jain2019", "wiegreffe2019"]
+    refs: ["jain2019", "wiegreffe2019", "vaswani2017", "lindsay2020"]
   },
   {
     word: "Learning", category: "technical", kind: "Established technical term",
@@ -20,7 +20,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Both can produce improved performance following exposure to examples or experience.",
     limit: "Better measured performance does not by itself establish humanlike understanding, reflection, or the ability to generalize in the ways people do.",
     stakes: "The familiar word can obscure exactly what changed, under which objective, and on which evaluation distribution.",
-    question: "What evidence distinguishes task adaptation from broader conceptual learning?"
+    question: "What evidence distinguishes task adaptation from broader conceptual learning?",
+    refs: ["samuel1959", "lake2017", "geirhos2020"]
   },
   {
     word: "Neuron", category: "technical", kind: "Biological analogy",
@@ -30,7 +31,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Early artificial neural models abstracted aspects of input integration and activation in biological neurons.",
     limit: "A scalar activation is not a full biological cell, and neural network training is not a faithful account of how brains learn.",
     stakes: "Biological language can inspire research, but it can also imply a degree of neuroscientific realism that a model was never designed to provide.",
-    question: "Which parts of the biological analogy still inform current architectures?"
+    question: "Which parts of the biological analogy still inform current architectures?",
+    refs: ["mcculloch1943", "beniaguev2021", "watson2019"]
   },
   {
     word: "Memory", category: "technical", kind: "Functional analogy",
@@ -40,7 +42,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Earlier information can affect later behavior, sometimes over long periods.",
     limit: "These mechanisms differ in durability, retrieval, fidelity, and update rules; none should be presumed to resemble autobiographical recollection.",
     stakes: "Unqualified claims that an assistant 'remembers' may mislead users about persistence, privacy, and what the system actually stores.",
-    question: "Which memory mechanism is being described, and what are its retention boundaries?"
+    question: "Which memory mechanism is being described, and what are its retention boundaries?",
+    refs: ["hochreiter1997", "weston2015"]
   },
   {
     word: "Reward", category: "technical", kind: "Behavioral analogy",
@@ -50,7 +53,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Feedback can systematically shape future behavior.",
     limit: "A system that maximizes reward need not experience pleasure, desire, or moral approval; the reward specification is not the same as the designer's actual intent.",
     stakes: "The term can conceal reward misspecification and make optimization appear more psychologically human than it is.",
-    question: "What behavior does the reward function incentivize that its designers did not intend?"
+    question: "What behavior does the reward function incentivize that its designers did not intend?",
+    refs: ["silver2021", "vamplew2022"]
   },
   {
     word: "Curiosity", category: "technical", kind: "Motivational metaphor",
@@ -60,7 +64,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "The resulting behavior can resemble active exploration rather than passive response.",
     limit: "Optimizing a novelty signal is not equivalent to an experienced desire to understand the world.",
     stakes: "The name can be useful shorthand, but evaluation should specify the exploration objective rather than infer motivation.",
-    question: "Does this system explore because of an objective, or are we attributing a motive to an algorithm?"
+    question: "Does this system explore because of an objective, or are we attributing a motive to an algorithm?",
+    refs: ["pathak2017", "oudeyer2007"]
   },
   {
     word: "Forgetting", category: "technical", kind: "Functional analogy",
@@ -70,7 +75,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Information that once supported successful performance becomes unavailable or less effective.",
     limit: "A measured performance drop need not imply a human-style memory trace that has faded; interference and representation changes may be involved.",
     stakes: "The same word is used for unintended interference and intentional data removal, despite very different mechanisms and obligations.",
-    question: "Are we measuring retrieval failure, parameter interference, or verified removal?"
+    question: "Are we measuring retrieval failure, parameter interference, or verified removal?",
+    refs: ["french1999", "cao2015"]
   },
   {
     word: "Dreaming", category: "technical", kind: "Evocative metaphor",
@@ -80,7 +86,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "The system creates or replays internally generated patterns rather than directly consuming fresh observations.",
     limit: "Image synthesis and replay do not demonstrate sleep, private experience, or consciousness.",
     stakes: "A vivid metaphor may attract attention while obscuring the computation it labels.",
-    question: "What exactly is generated, and what role does generation play in learning?"
+    question: "What exactly is generated, and what role does generation play in learning?",
+    refs: ["hafner2020", "hopfield1983"]
   },
   {
     word: "Perception", category: "technical", kind: "Functional analogy",
@@ -90,7 +97,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Both transform incoming signals into representations useful for action or interpretation.",
     limit: "A successful classification does not imply subjective seeing or hearing; models can depend on shortcuts unlike human perceptual cues.",
     stakes: "Claims about 'seeing' can hide how image distributions, sensors, and failure modes constrain a system.",
-    question: "What does the system robustly detect, and what does it merely correlate with?"
+    question: "What does the system robustly detect, and what does it merely correlate with?",
+    refs: ["rosenblatt1958", "funke2021"]
   },
   {
     word: "Intelligence", category: "technical", kind: "Contested umbrella term",
@@ -100,7 +108,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Some systems perform tasks that, when performed by humans, are taken to involve intelligence.",
     limit: "Strong performance on a task does not settle whether the system has general competence, awareness, or the same underlying capacities as people.",
     stakes: "An underspecified label can make benchmark scores appear to support claims broader than the evaluations actually test.",
-    question: "Which capacities are we calling intelligent, and by which evidence?"
+    question: "Which capacities are we calling intelligent, and by which evidence?",
+    refs: ["turing1950", "legg2007", "inie2026"]
   },
   {
     word: "Training", category: "technical", kind: "Educational analogy",
@@ -110,7 +119,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "Repeated examples and feedback can improve task performance.",
     limit: "The training process does not necessarily involve teaching in the pedagogical sense, nor does it guarantee transfer to new situations.",
     stakes: "Distinguishing pretraining, fine-tuning, and inference clarifies what a model can update and when.",
-    question: "What objective was optimized, and what behavior changed?"
+    question: "What objective was optimized, and what behavior changed?",
+    refs: ["bengio2009", "zhang2017"]
   },
   {
     word: "Self-supervision", category: "technical", kind: "Human-role metaphor",
@@ -120,7 +130,8 @@ window.DICTIONARY_ENTRIES = [
     analogy: "A learning signal is generated without manually annotating every example.",
     limit: "The method is not literally a model supervising itself as an autonomous teacher; the pretext objective and training setup are engineered.",
     stakes: "The phrase can mask the substantial human choices built into datasets, objectives, and model architectures.",
-    question: "Who designed the task that lets the data supervise training?"
+    question: "Who designed the task that lets the data supervise training?",
+    refs: ["jing2021", "kolesnikov2019"]
   },
   {
     word: "Reasoning", category: "behavior", kind: "Contested attribution",
@@ -434,5 +445,30 @@ window.DICTIONARY_REFERENCES = {
   "wang2024": { authors: "L. Wang et al.", year: "2024", title: "A survey on large language model based autonomous agents", venue: "Frontiers of Computer Science", url: "https://doi.org/10.1007/s11704-024-40231-1", peerReviewed: true },
   "wei2022": { authors: "J. Wei et al.", year: "2022", title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html", peerReviewed: true },
   "wooldridge1995": { authors: "M. Wooldridge & N. R. Jennings", year: "1995", title: "Intelligent agents: theory and practice", venue: "Knowledge Engineering Review", url: "https://doi.org/10.1017/S0269888900008122", peerReviewed: true },
-  "yao2023": { authors: "S. Yao et al.", year: "2023", title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract-Conference.html", peerReviewed: true }
+  "yao2023": { authors: "S. Yao et al.", year: "2023", title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract-Conference.html", peerReviewed: true },
+  "bengio2009": { authors: "Y. Bengio et al.", year: "2009", title: "Curriculum learning", venue: "ICML", url: "https://doi.org/10.1145/1553374.1553380", peerReviewed: true },
+  "beniaguev2021": { authors: "D. Beniaguev, I. Segev & M. London", year: "2021", title: "Single cortical neurons as deep artificial neural networks", venue: "Neuron", url: "https://doi.org/10.1016/j.neuron.2021.07.002", peerReviewed: true },
+  "cao2015": { authors: "Y. Cao & J. Yang", year: "2015", title: "Towards Making Systems Forget with Machine Unlearning", venue: "IEEE S&P", url: "https://doi.org/10.1109/SP.2015.35", peerReviewed: true },
+  "french1999": { authors: "R. M. French", year: "1999", title: "Catastrophic forgetting in connectionist networks", venue: "Trends in Cognitive Sciences", url: "https://doi.org/10.1016/S1364-6613(99)01294-2", peerReviewed: true },
+  "funke2021": { authors: "C. M. Funke et al.", year: "2021", title: "Five points to check when comparing visual perception in humans and machines", venue: "Journal of Vision", url: "https://doi.org/10.1167/jov.21.3.16", peerReviewed: true },
+  "geirhos2020": { authors: "R. Geirhos et al.", year: "2020", title: "Shortcut learning in deep neural networks", venue: "Nature Machine Intelligence", url: "https://doi.org/10.1038/s42256-020-00257-z", peerReviewed: true },
+  "hafner2020": { authors: "D. Hafner et al.", year: "2020", title: "Dream to Control: Learning Behaviors by Latent Imagination", venue: "ICLR", url: "https://openreview.net/forum?id=S1lOTC4tDS", peerReviewed: true },
+  "hochreiter1997": { authors: "S. Hochreiter & J. Schmidhuber", year: "1997", title: "Long Short-Term Memory", venue: "Neural Computation", url: "https://doi.org/10.1162/neco.1997.9.8.1735", peerReviewed: true },
+  "hopfield1983": { authors: "J. J. Hopfield, D. I. Feinstein & R. G. Palmer", year: "1983", title: "‘Unlearning’ has a stabilizing effect in collective memories", venue: "Nature", url: "https://doi.org/10.1038/304158a0", peerReviewed: true },
+  "jing2021": { authors: "L. Jing & Y. Tian", year: "2021", title: "Self-Supervised Visual Feature Learning With Deep Neural Networks: A Survey", venue: "IEEE TPAMI", url: "https://doi.org/10.1109/TPAMI.2020.2992393", peerReviewed: true },
+  "kolesnikov2019": { authors: "A. Kolesnikov, X. Zhai & L. Beyer", year: "2019", title: "Revisiting Self-Supervised Visual Representation Learning", venue: "CVPR", url: "https://openaccess.thecvf.com/content_CVPR_2019/html/Kolesnikov_Revisiting_Self-Supervised_Visual_Representation_Learning_CVPR_2019_paper.html", peerReviewed: true },
+  "lake2017": { authors: "B. M. Lake et al.", year: "2017", title: "Building machines that learn and think like people", venue: "Behavioral and Brain Sciences", url: "https://doi.org/10.1017/S0140525X16001837", peerReviewed: true },
+  "legg2007": { authors: "S. Legg & M. Hutter", year: "2007", title: "Universal Intelligence: A Definition of Machine Intelligence", venue: "Minds and Machines", url: "https://doi.org/10.1007/s11023-007-9079-x", peerReviewed: true },
+  "lindsay2020": { authors: "G. W. Lindsay", year: "2020", title: "Attention in Psychology, Neuroscience, and Machine Learning", venue: "Frontiers in Computational Neuroscience", url: "https://doi.org/10.3389/fncom.2020.00029", peerReviewed: true },
+  "mcculloch1943": { authors: "W. S. McCulloch & W. Pitts", year: "1943", title: "A logical calculus of the ideas immanent in nervous activity", venue: "Bulletin of Mathematical Biophysics", url: "https://doi.org/10.1007/BF02478259", peerReviewed: true },
+  "oudeyer2007": { authors: "P.-Y. Oudeyer & F. Kaplan", year: "2007", title: "What is intrinsic motivation? A typology of computational approaches", venue: "Frontiers in Neurorobotics", url: "https://doi.org/10.3389/neuro.12.006.2007", peerReviewed: true },
+  "pathak2017": { authors: "D. Pathak et al.", year: "2017", title: "Curiosity-driven Exploration by Self-supervised Prediction", venue: "ICML", url: "https://proceedings.mlr.press/v70/pathak17a.html", peerReviewed: true },
+  "rosenblatt1958": { authors: "F. Rosenblatt", year: "1958", title: "The perceptron: A probabilistic model for information storage and organization in the brain", venue: "Psychological Review", url: "https://doi.org/10.1037/h0042519", peerReviewed: true },
+  "samuel1959": { authors: "A. L. Samuel", year: "1959", title: "Some Studies in Machine Learning Using the Game of Checkers", venue: "IBM Journal of Research and Development", url: "https://doi.org/10.1147/rd.33.0210", peerReviewed: true },
+  "silver2021": { authors: "D. Silver et al.", year: "2021", title: "Reward is enough", venue: "Artificial Intelligence", url: "https://doi.org/10.1016/j.artint.2021.103535", peerReviewed: true },
+  "vamplew2022": { authors: "P. Vamplew et al.", year: "2022", title: "Scalar reward is not enough: a response to Silver, Singh, Precup and Sutton (2021)", venue: "Autonomous Agents and Multi-Agent Systems", url: "https://doi.org/10.1007/s10458-022-09575-5", peerReviewed: true },
+  "vaswani2017": { authors: "A. Vaswani et al.", year: "2017", title: "Attention is All you Need", venue: "NeurIPS", url: "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html", peerReviewed: true },
+  "watson2019": { authors: "D. Watson", year: "2019", title: "The Rhetoric and Reality of Anthropomorphism in Artificial Intelligence", venue: "Minds and Machines", url: "https://doi.org/10.1007/s11023-019-09506-6", peerReviewed: true },
+  "weston2015": { authors: "J. Weston, S. Chopra & A. Bordes", year: "2015", title: "Memory Networks", venue: "ICLR", url: "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html", peerReviewed: true },
+  "zhang2017": { authors: "C. Zhang et al.", year: "2017", title: "Understanding deep learning requires rethinking generalization", venue: "ICLR", url: "https://openreview.net/forum?id=Sy8gdB9xx", peerReviewed: true }
 };
